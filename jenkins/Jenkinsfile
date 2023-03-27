@@ -1,5 +1,8 @@
 pipeline {
     agent any
+    tools {
+        maven "maven_himan"
+    }
     stages {
         stage('Build') {
             steps {
